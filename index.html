@@ -17,6 +17,7 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
@@ -1082,6 +1083,55 @@
     </div>
     <!-- Content End -->
 
+    <!-- Information Start -->
+    <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-gray-300" style="box-shadow:0 0 3rem #000000 !important">
+                <div class="modal-body">
+                    <div class="row" id="textInfo">
+                        <div class="col-12 mb-2">
+                            <div class="card text-gray-600" style="border:1px;">
+                                <div class="card-header">
+                                    <h5 class="modal-title" id="myLargeModalLabel"><i class="fa fa-bullhorn"
+                                            style="color: #FF0000;" aria-hidden="true"></i> Information</h5>
+                                </div>
+                                <div class="card-body border-0 pb-0">
+                                    <div class="row">
+                                        <div class="col-12" style="font-size:12px !important">
+                                            <p class="card-text"></p>
+                                            <img src='./assets/img/information.jpeg' width="100%"
+                                                class="img-fluid">
+                                            <span class="text-gray-600">Selamat berbelanja.</span>
+                                            <div class="col-12 text-end" style="font-size:10px !important"><span>BY ILM Store </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col float-start">
+                                    <div class="form-check mt-2" style="font-size:12px">
+                                        <label class="form-check-label mt-2" style="font-size:12px !important"
+                                            for="customCheck1">
+                                            <input type="checkbox" class="form-check-input" id="dontShow"> Jangan tampilkan
+                                            lagi</label>
+                                    </div>
+                                </div>
+                                <div class="col text-end">
+                                    <button type="button" name="read_popup_news_b2c" style="font-size:13px"
+                                        class="btn btn-primary btn-sm ml-auto mt-2" data-bs-dismiss="modal"
+                                        onclick="disablePopup()">Tutup</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Information End -->
+
     <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="-mt-8 transition delay-150 duration-300 ease-in-out print:hidden md:-mt-24"><path d="M 0,400 C 0,400 0,200 0,200 C 40.34909359970402,243.0042668639783 80.69818719940804,286.0085337279566 135,268 C 189.30181280059196,249.9914662720434 257.5563448020718,170.97013195215192 311,159 C 364.4436551979282,147.02986804784808 403.07643359230485,202.11093846343573 452,207 C 500.92356640769515,211.88906153656427 560.137920828709,166.58611419410528 626,169 C 691.862079171291,171.41388580589472 764.3718830928599,221.54460476014305 826,248 C 887.6281169071401,274.45539523985695 938.3745467998519,277.2354667653225 985,246 C 1031.625453200148,214.7645332346775 1074.1299297077323,149.51352817856701 1122,137 C 1169.8700702922677,124.48647182143299 1223.1057343692194,164.71042052040943 1277,184 C 1330.8942656307806,203.28957947959057 1385.4471328153904,201.64478973979527 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#211E1C" fill-opacity="1" class="path-0 transition-all delay-150 duration-300 ease-in-out"></path></svg>
 
     <!-- Footer Start -->
@@ -1211,7 +1261,23 @@
         </div>
     </footer>
     <!-- Footer End -->
+
+    <script type="text/javascript">
+        var cookie = document.cookie.split("; ");
+        if (cookie.length < 2) {
+            $(document).ready(function () {
+                $("#popup").modal("show");
+            })
+        }
     
-    
+        function disablePopup() {
+            var checkBox = document.getElementById("dontShow");
+            var date = new Date();
+            date.setTime(date.getTime() + (1 * 24 * 60 * 60 * 1000));
+            if (checkBox.checked) {
+                document.cookie = "popup=0; expires=" + date.toGMTString();
+            }
+        }
+    </script>
 </body>
 </html>
