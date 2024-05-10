@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;800&display=swap');
+
+/* Main */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.bg-thema {
+    /* background-color: #06213F; */
+    background: linear-gradient(to right, hsl(0 0% 20%) 0%, hsl(0 0% 12.9%) 50%, hsl(0 0% 12.2%)) 100%;
+}
+
+
+/* Navbar */
+.css-mxl5am {
+
+    color: rgb(255, 255, 255);
+
+    background: rgb(112, 127, 235);
+
+}
+
+/* Populer Item */
+.bg-featured-game-card {
+    --tw-bg-opacity: 1;
+    /* background-color: rgb(52 55 59/var(--tw-bg-opacity)); */
+    background-color: #211E1C;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDAwIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPnBhdGh7b3BhY2l0eTouMTtjbGlwLXBhdGg6dXJsKCNjbGlwUGF0aCk7ZmlsbDp1cmwoI2xpbmVhckdyYWRpZW50KTt9PC9zdHlsZT48Y2xpcFBhdGggaWQ9ImNsaXBQYXRoIj48cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDAwIi8+PC9jbGlwUGF0aD48bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhckdyYWRpZW50IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjkwJSIgeTI9IjAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9ImhzbCgwIDAlIDEwMCUvMSkiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9ImhzbCgwIDAlIDEwMCUvMCkiLz48L2xpbmVhckdyYWRpZW50PjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5MjAsMTAwMClzY2FsZSgtMSwtMSkiPjxwYXRoIGQ9Ik0xMzg0LjUgMzQzLjJMMTkyLjcgMTUzNWwtMjEzLjUtM0wxMzgzIDEyOC4ybDEuNSAyMTV6Ii8+PHBhdGggZD0iTTE5MTkuNyA0NDguM0wxMzU5IDEwMDlsLTEwMC40LTEuNEwxOTE5IDM0Ny4xbC43IDEwMS4yeiIvPjxwYXRoIGQ9Ik0xMTc2LjcgNTE0LjNMNjE2IDEwNzVsLTEwMC40LTEuNEwxMTc2IDQxMy4xbC43IDEwMS4yeiIvPjxwYXRoIGQ9Ik02NDQuNyA0NTcuM0w4NCAxMDE4bC0xMDAuNC0xLjRMNjQ0IDM1Ni4xbC43IDEwMS4yeiIvPjxwYXRoIGQ9Ik0xMzg3LjcgNDQ4LjNMODI3IDEwMDlsLTEwMC40LTEuNEwxMzg3IDM0Ny4xbC43IDEwMS4yeiIvPjxwYXRoIGQ9Ik0xMjUwLjEgNDkzLjhsLTU0NSA1NDUtNTIuNyA0My42IDY0MS45LTY0MS45LTQ0LjIgNTMuM3oiLz48cGF0aCBkPSJNODkxLjEgNjM5LjFMLTc3OCAyMzA4LjNsLTI5OC45LTQuMkw4ODkgMzM4LjFsMi4xIDMwMXoiLz48cGF0aCBkPSJNMTg3MC40IDQxOS44TC0yOC44IDIzMTlsLTM0MC4xLTQuOEwxODY4IDc3LjNsMi40IDM0Mi41eiIvPjxwYXRoIGQ9Ik05MDguNCA0MzYuOEwtOTkwLjggMjMzNmwtMzQwLjEtNC44TDkwNiA5NC4zbDIuNCAzNDIuNXoiLz48cGF0aCBkPSJNMTYzMi40IDUxNS44TC0yNjYuOCAyNDE1bC0zNDAuMS00LjhMMTYzMCAxNzMuM2wyLjQgMzQyLjV6Ii8+PHBhdGggZD0iTTExNzYuMyA1NjcuMUwtMTQ0NS42IDMxODlsLTQ2OS41LTYuNkwxMTczIDk0LjNsMy4zIDQ3Mi44eiIvPjxwYXRoIGQ9Ik0xNDI3LjMgNTgwLjFMLTExOTQuNiAzMjAybC00NjkuNS02LjZMMTQyNCAxMDcuM2wzLjMgNDcyLjh6Ii8+PHBhdGggZD0iTTE2NDkuNSA4ODAuMkw0NTcuNyAyMDcybC0yMTMuNS0zTDE2NDggNjY1LjJsMS41IDIxNXoiLz48cGF0aCBkPSJNNjc1LjggNTIyLjJsLTI2MjEuOSAyNjIxLjktNDY5LjQtNi42TDY3Mi41IDQ5LjRsMy4zIDQ3Mi44eiIvPjxwYXRoIGQ9Ik0yNTk1LjkgNTIyLjJMLTI2IDMxNDQuMWwtNDY5LjUtNi42TDI1OTIuNiA0OS40bDMuMyA0NzIuOHoiLz48L2c+PC9zdmc+);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: clamp(60em, 100rem, 100em) auto, cover;
+}
+
+/* Content Tab */
+
+.nav-item button.active,
+.nav-item button:hover {
+    background-color: hsl(31.62162162162163 29.599999999999998% 51%) !important;
+}
+
+.hide-scrollbar {
+    display: none;
+    flex-wrap: nowrap;
+    padding-bottom: 1.5rem;
+    padding-left: 0;
+    margin-block: 0;
+    /* overflow-x: auto; */
+    list-style: none;
+    text-align: center;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 7px;
+    }
+
+    .hide-scrollbar {
+        scrollbar-width: none !important;
+    }
+}
+
+.nav-pills .nav-link {
+    border-radius: .25rem;
+    color: #4c4c4c;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 3px;
+    padding: 12px 20px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+}
+
+.nav-pills .nav-link:hover {
+    background-color: transparent;
+}
+
+.nav-pills .nav-link i {
+    margin-right: 2px;
+    font-weight: 600;
+}
+
+.top-icon.nav-pills .nav-link i {
+    margin: 0px;
+    font-weight: 500;
+    display: block;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #0a4875;
+}
+
+.color-pills .nav-link {
+    color: #fff;
+}
+
+.color-pills .nav-link:hover {
+    color: #353434;
+    background-color: #fff;
+}
+
+.color-pills .nav-link.active,
+.color-pills .show>.nav-link {
+    color: #353434;
+    background-color: #fff;
+}
+
+.nav-pills-success .nav-link.active,
+.nav-pills-success .show>.nav-link {
+    color: #fff;
+    background-color: #04b962;
+}
+
+.nav-pills-info .nav-link.active,
+.nav-pills-info .show>.nav-link {
+    color: #fff;
+    background-color: #14b6ff;
+}
+
+.nav-pills-danger .nav-link.active,
+.nav-pills-danger .show>.nav-link {
+    color: #fff;
+    background-color: #f43643;
+}
+
+.nav-pills-warning .nav-link.active,
+.nav-pills-warning .show>.nav-link {
+    color: #fff;
+    background-color: #ff8800;
+}
+
+.nav-pills-dark .nav-link.active,
+.nav-pills-dark .show>.nav-link {
+    color: #fff;
+    background-color: #353434;
+}
+
+.nav-pills-secondary .nav-link.active,
+.nav-pills-secondary .show>.nav-link {
+    color: #fff;
+    background-color: #94614f;
+}
+
+.container {
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Content */
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.featured-game-card:hover {
+
+    transition: all 1s;
+
+}
+
+.featured-game-card:hover img {
+
+    filter: blur(40px);
+
+
+
+}
+
+.featured-game-card .blur-sharp {
+
+    overflow: hidden;
+
+    border-radius: 0rem;
+
+}
+
+.cover {
+
+    transition: all 1s;
+
+    opacity: 0;
+
+    left: 0;
+
+    right: 0;
+
+    border-radius: 1rem;
+
+}
+
+.featured-game-card:hover .cover {
+
+    transition: all 1s;
+
+    opacity: 0;
+
+    border-radius: 1rem;
+
+}
+
+.featured-game-card:hover {
+
+    transition: all 1s
+}
+
+
+
+.featured-game-card:hover img {
+
+    filter: blur(3.5px);
+
+}
+
+
+
+.featured-game-card .blur-sharp {
+
+    overflow: hidden;
+
+    border-radius: 1rem
+}
+
+.featured-game-card:hover .cover {
+
+    transition: all 1s;
+
+    opacity: 1;
+
+    border-radius: 1rem
+}
+
+/* Footer */
+.icon-button {
+
+    position: relative;
+
+    display: inline-flex;
+
+    border: 0;
+
+    padding: 0;
+
+    margin: 0;
+
+    outline: none;
+
+    background: #fff;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    flex-shrink: 0;
+
+}
+
+.icon-button {
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.icon-button {
+
+    position: relative;
+
+    display: inline-flex;
+
+    border: 0;
+
+    padding: 0;
+
+    margin: 0;
+
+    outline: none;
+
+    background: #fff;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    flex-shrink: 0
+}
+
+.flex-center,
+.icon-button {
+
+    align-items: center;
+
+    justify-content: center
+}
