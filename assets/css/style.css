@@ -123,6 +123,14 @@ body {
 
 }
 
+.bg-btnPurple {
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(112 127 235 / var(--tw-bg-opacity));
+
+}
+
 .scroll-up-btn {
 
     display: none;
