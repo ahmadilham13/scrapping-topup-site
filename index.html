@@ -1262,7 +1262,60 @@
     </footer>
     <!-- Footer End -->
 
+
+    <!-- Additional Button Start -->
+    <div class="fab-container">
+        <div class="fab fab-icon-holder" style="background-color: #fff;">
+            <img src="./assets/img/callcenter.png" alt="callcenter" style="width: 100%; height: auto; display: block; margin: 0 auto;" />
+        </div>
+        <ul class="fab-options">
+            <li>
+                <a href="" class="text-decoration-none" target="_blank">
+                    <div class="fab-icon-holder" style="background-color: #e61c6d;">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" class="text-decoration-none" target="_blank">
+                    <div class="fab-icon-holder" style="background-color: #25D366;">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" class="text-decoration-none pb-2" target="_blank">
+                    <div class="fab-icon-holder" style="background-color: #000; ">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <button class="scroll-up-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- Additional Button End -->
+
     <script type="text/javascript">
+
+        var scrollBtn = document.querySelector(".scroll-up-btn");
+        window.addEventListener("scroll", function() {
+        if (window.pageYOffset > 20) {
+            scrollBtn.style.display = "block";
+        } else {
+            scrollBtn.style.display = "none";
+        }
+        });
+
+        scrollBtn.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
         var cookie = document.cookie.split("; ");
         if (cookie.length < 2) {
             $(document).ready(function () {
